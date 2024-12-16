@@ -29,7 +29,7 @@ function App() {
     ];
 
     const [cart, setCart] = useState([]);
-    const [isCartVisible, setCartVisible] = useState(true); // State for cart visibility
+    const [isCartVisible, setCartVisible] = useState(true); 
 
     const addToCart = (product) => {
         const existingItem = cart.find(item => item.id === product.id);
@@ -75,7 +75,7 @@ function App() {
     };
 
     const toggleCartVisibility = () => {
-        setCartVisible(!isCartVisible); // Toggle the visibility of the cart
+        setCartVisible(!isCartVisible); 
     };
 
     return (
@@ -97,7 +97,7 @@ function App() {
                     removeFromCart={removeFromCart}
                     incrementQuantity={incrementQuantity}
                     decrementQuantity={decrementQuantity}
-                    toggleCartVisibility={toggleCartVisibility} // Pass the toggle function to Cart
+                    toggleCartVisibility={toggleCartVisibility}
                 />
             )}
         </div>
